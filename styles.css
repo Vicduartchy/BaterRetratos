@@ -10,86 +10,86 @@
 
 /* ---------- Estilo Global ---------- */
 body {
-  background-color: var(--cor-bg); /* Define a cor de fundo global */
-  font-family: 'Josefin Sans', sans-serif; /* Define a fonte principal */
-  color: var(--cor-texto); /* Define a cor padrão do texto */
-  margin: 0; /* Remove margens padrão do body */
-  padding: 0; /* Remove padding padrão do body */
+  background-color: var(--cor-bg); /* Fundo geral */
+  font-family: 'Josefin Sans', sans-serif; /* Fonte principal */
+  color: var(--cor-texto); /* Cor padrão do texto */
+  margin: 0; /* Remove margens padrão */
+  padding: 0; /* Remove padding padrão */
 }
 
 /* ---------- Header ---------- */
 .header {
-  background-color: var(--cor-clara); /* Fundo claro para o header */
-  padding: 20px; /* Espaçamento interno */
+  background-color: var(--cor-clara); /* Fundo do header */
+  padding: 20px;
 }
 
 .header .brand {
   color: var(--cor-secundaria); /* Cor do texto da marca */
-  font-weight: bold; /* Negrito para destacar a marca */
-  font-size: 1.25rem; /* Tamanho da fonte da marca */
+  font-weight: bold;
+  font-size: 1.25rem;
 }
 
 .header .nav-link {
-  color: var(--cor-secundaria); /* Cor dos links de navegação */
-  margin: 0 10px; /* Espaçamento entre os links */
-  text-decoration: none; /* Remove sublinhado dos links */
+  color: var(--cor-secundaria); /* Cor dos links */
+  margin: 0 10px;
+  text-decoration: none;
 }
 
 .header .nav-link:hover {
-  color: var(--cor-escura); /* Muda a cor ao passar o mouse */
+  color: var(--cor-escura); /* Cor ao passar o mouse */
 }
 
 /* ---------- Hero Section ---------- */
 .hero {
   background-image: url('https://source.unsplash.com/1600x900/?photography'); /* Imagem de fundo */
-  background-size: cover; /* Cobre toda a área disponível */
-  background-position: center; /* Centraliza a imagem de fundo */
-  padding: 60px 20px; /* Padding interno */
+  background-size: cover;
+  background-position: center;
+  padding: 60px 20px;
 }
 
 .hero-content {
-  background-color: var(--cor-secundaria); /* Fundo secundário para o conteúdo */
-  padding: 40px; /* Espaçamento interno */
-  border-radius: 10px; /* Bordas arredondadas */
+  background-color: var(--cor-secundaria); /* Fundo do conteúdo */
+  padding: 40px;
+  border-radius: 10px;
 }
 
 .hero-content h1 {
-  color: var(--cor-clara); /* Cor clara para o título */
-  font-size: 3rem; /* Tamanho do título */
-  font-weight: bold; /* Negrito para destacar o título */
-  margin-bottom: 20px; /* Espaçamento inferior do título */
+  color: var(--cor-clara); /* Título claro */
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
 }
 
 .hero-content p {
-  color: var(--cor-clara); /* Cor clara para o parágrafo */
-  font-size: 1.25rem; /* Tamanho da fonte do parágrafo */
-  margin-bottom: 30px; /* Espaçamento inferior do parágrafo */
+  color: var(--cor-clara);
+  font-size: 1.25rem;
+  margin-bottom: 30px;
 }
 
 .btn-custom {
-  background-color: var(--cor-escura); /* Fundo escuro para o botão */
-  color: var(--cor-clara); /* Texto claro no botão */
-  font-weight: bold; /* Negrito para o texto do botão */
-  padding: 10px 20px; /* Espaçamento interno do botão */
-  border: none; /* Remove bordas padrão */
-  border-radius: 5px; /* Bordas arredondadas */
-  transition: transform 0.3s ease, background-color 0.3s ease; /* Adiciona transição suave */
+  background-color: var(--cor-escura);
+  color: var(--cor-clara);
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 .btn-custom:hover {
-  background-color: var(--cor-clara); /* Muda a cor de fundo ao passar o mouse */
-  color: var(--cor-secundaria); /* Muda a cor do texto ao passar o mouse */
-  transform: scale(1.05); /* Leve aumento ao passar o mouse */
+  background-color: var(--cor-clara);
+  color: var(--cor-secundaria);
+  transform: scale(1.05);
 }
 
 .btn-custom:active {
-  transform: scale(0.95); /* Efeito de clique */
+  transform: scale(0.95);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 /* ---------- Portfolio Section ---------- */
 #portfolio {
-  background-color: var(--cor-bg); /* Cor de fundo opcional para a seção */
+  background-color: var(--cor-bg); /* Fundo do portfólio */
   padding: 60px 20px;
 }
 
@@ -98,11 +98,11 @@ body {
 }
 
 .carousel-item img {
-  display: block; /* Garante que a imagem se comporte como um bloco */
-  margin: 0 auto; /* Centraliza a imagem horizontalmente */
-  max-width: 100%; /* Ajusta a largura da imagem para o tamanho do contêiner */
-  height: 300px; /* Altura fixa para uniformidade */
-  object-fit: cover; /* Ajuste proporcional */
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: 300px;
+  object-fit: cover;
 }
 
 .carousel-caption {
