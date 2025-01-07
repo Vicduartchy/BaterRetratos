@@ -1,0 +1,245 @@
+/* ---------- Cores Principais ---------- */
+:root {
+  --cor-principal: #495471; /* Cor principal utilizada em elementos chave */
+  --cor-secundaria: #b06662; /* Cor secundária para destaque */
+  --cor-bg: #495471; /* Cor de fundo geral */
+  --cor-clara: #f6f0df; /* Cor clara para contrastes */
+  --cor-escura: #6b5a6c; /* Cor escura para textos e fundos */
+  --cor-texto: #495471; /* Cor padrão dos textos */
+}
+
+/* ---------- Estilo Global ---------- */
+body {
+  background-color: var(--cor-bg); /* Define a cor de fundo global */
+  font-family: 'Josefin Sans', sans-serif; /* Define a fonte principal */
+  color: var(--cor-texto); /* Define a cor padrão do texto */
+  margin: 0; /* Remove margens padrão do body */
+  padding: 0; /* Remove padding padrão do body */
+}
+
+/* ---------- Header ---------- */
+.header {
+  background-color: var(--cor-clara); /* Fundo do menu */
+  border-bottom: 1px solid var(--cor-principal); /* Linha sutil no rodapé do menu */
+}
+
+.header .nav-link {
+  color: var(--cor-secundaria); /* Cor do texto do menu */
+  font-size: 0.9rem; /* Texto menor */
+  font-weight: bold; /* Texto destacado */
+}
+
+.header .nav-link:hover {
+  color: var(--cor-principal); /* Cor ao passar o mouse */
+}
+
+/* ---------- Hero Section ---------- */
+.hero {
+  background-image: url('https://source.unsplash.com/1600x900/?photography'); /* Imagem de fundo */
+  background-size: cover; /* Cobre toda a área disponível */
+  background-position: center; /* Centraliza a imagem de fundo */
+  padding: 60px 20px; /* Padding interno */
+}
+
+.hero-content {
+  background-color: var(--cor-escura); /* Fundo secundário para o conteúdo */
+  padding: 40px; /* Espaçamento interno */
+  border-radius: 10px; /* Bordas arredondadas */
+}
+
+.hero-content h1 {
+  color: var(--cor-clara); /* Cor clara para o título */
+  font-size: 3rem; /* Tamanho do título */
+  font-weight: bold; /* Negrito para destacar o título */
+  margin-bottom: 5px; /* Espaçamento inferior do título */
+}
+
+.hero-content p {
+  color: var(--cor-clara); /* Cor clara para o parágrafo */
+  font-size: 1.25rem; /* Tamanho da fonte do parágrafo */
+  margin-bottom: 30px; /* Espaçamento inferior do parágrafo */
+}
+
+.btn-custom {
+  background-color: var(--cor-escura); /* Fundo escuro para o botão */
+  color: var(--cor-clara); /* Texto claro no botão */
+  font-weight: bold; /* Negrito para o texto do botão */
+  padding: 10px 20px; /* Espaçamento interno do botão */
+  border: none; /* Remove bordas padrão */
+  border-radius: 5px; /* Bordas arredondadas */
+  transition: transform 0.3s ease, background-color 0.3s ease; /* Adiciona transição suave */
+}
+
+.btn-custom:hover {
+  background-color: var(--cor-clara); /* Muda a cor de fundo ao passar o mouse */
+  color: var(--cor-secundaria); /* Muda a cor do texto ao passar o mouse */
+  transform: scale(1.05); /* Leve aumento ao passar o mouse */
+}
+
+.btn-custom:active {
+  transform: scale(0.95); /* Efeito de clique */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* ---------- Portfolio Section ---------- */
+#portfolio {
+  background-color: var(--cor-bg); /* Cor de fundo opcional para a seção */
+  padding: 60px 20px;
+}
+
+.portfolio h2 {
+  color: var(--cor-clara);
+}
+
+.carousel-item img {
+  display: block; /* Garante que a imagem se comporte como um bloco */
+  margin: 0 auto; /* Centraliza a imagem horizontalmente */
+  max-width: 100%; /* Ajusta a largura da imagem para o tamanho do contêiner */
+  height: 300px; /* Altura fixa para uniformidade */
+  object-fit: cover; /* Ajuste proporcional */
+}
+
+.carousel-caption {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 5px;
+  color: var(--cor-clara);
+}
+
+.carousel-inner img {
+  width: 100%; /* Ajusta a largura para ocupar todo o espaço disponível */
+  height: auto; /* Mantém a proporção da altura */
+  object-fit: contain; /* Garante que a imagem seja ajustada dentro do contêiner, sem cortes */
+  background-color: #000; /* Opcional: adiciona uma cor de fundo para imagens menores */
+}
+
+/* ---------- Redes ---------- */
+#redes {
+  background-color: var(--cor-principal);
+  padding: 2rem 0;
+}
+
+#redes h2 {
+  color: var(--cor-clara);
+}
+
+.image-link:hover .figure {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.insta-img {
+  max-width: 70%; /* Define a largura como 50% do tamanho original */
+  height: auto;   /* Mantém a proporção da altura */
+  margin: 0 auto; /* Centraliza a imagem */
+}
+
+/* ---------- About Section ---------- */
+.about {
+  background-color: var(--cor-escura);
+  color: var(--cor-clara);
+  padding: 60px 20px;
+}
+
+.about h2 {
+  color: var(--cor-clara);
+}
+
+.about p {
+  color: var(--cor-clara);
+}
+
+/* ---------- Contact Section ---------- */
+.contact {
+  background-color: var(--cor-secundaria);
+  color: var(--cor-clara);
+  padding: 60px 20px;
+  border-radius: 10px;
+}
+
+.contact h2 {
+  color: var(--cor-clara);
+  font-weight: bold;
+}
+
+.contact .form-label {
+  color: var(--cor-clara);
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.contact .form-control {
+  background-color: var(--cor-clara);
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  font-size: 1rem;
+  color: var(--cor-escura);
+}
+
+.contact .form-control:focus {
+  border: 2px solid var(--cor-principal);
+  outline: none;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.contact .btn-primary {
+  background-color: var(--cor-principal);
+  border: none;
+  padding: 12px 25px;
+  font-size: 1.25rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.contact .btn-primary:hover {
+  background-color: var(--cor-clara);
+  color: var(--cor-secundaria);
+  transform: scale(1.05);
+}
+
+.contact .btn-primary:active {
+  transform: scale(0.95);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* ---------- Footer ---------- */
+.footer {
+  background-color: var(--cor-principal);
+  padding: 20px;
+  color: var(--cor-clara);
+  text-align: center;
+  line-height: 1.5;
+}
+
+/* ---------- Media Queries ---------- */
+
+/* Para dispositivos móveis (smartphones) */
+@media (max-width: 576px) {
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+  .hero-content p {
+    font-size: 1rem;
+  }
+  .btn-custom {
+    padding: 8px 16px;
+  }
+}
+
+/* Para tablets (dispositivos com largura entre 576px e 992px) */
+@media (min-width: 576px) and (max-width: 992px) {
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+  iframe {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+}
